@@ -1,0 +1,3 @@
+display_name: Repo Workflow
+short_description: Follow shared repo workflow with portable paths and safe local settings.
+default_prompt: Use the repo workflow skill for this task.
