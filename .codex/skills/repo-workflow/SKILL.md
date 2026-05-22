@@ -16,13 +16,17 @@ Follow this repository's shared workflow while keeping all paths portable across
 - Do not hard-code user-specific paths such as `C:\Users\name\...`.
 - Do not commit API keys, tokens, passwords, local credentials, or machine-specific config.
 - If a task needs a local path, ask the user or read it from an ignored local config file.
+- At the start of work, sync with the remote only when the working tree is clean.
+- After committing shared changes, push when the user wants the change available on other computers.
 
 ## Before Changing Files
 
 1. Inspect the current repo structure.
-2. Check whether matching conventions already exist.
-3. Keep edits scoped to the requested task.
-4. Preserve unrelated user changes.
+2. Check branch, working tree state, and remote tracking status.
+3. If clean, run `git pull --ff-only` before editing.
+4. Check whether matching conventions already exist.
+5. Keep edits scoped to the requested task.
+6. Preserve unrelated user changes.
 
 ## Recommended Layout
 
